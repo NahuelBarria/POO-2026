@@ -1,6 +1,3 @@
-public abstract class Pieza {
-
-
 public abstract class Pieza{
     private String color;
     private String velocidad;
@@ -9,7 +6,7 @@ public abstract class Pieza{
 
     public Pieza() {
     }
-
+    
     public Pieza(String color, String velocidad, String comportamiento, String movimiento) {
         this.color = color;
         this.velocidad = velocidad;
@@ -48,32 +45,8 @@ public abstract class Pieza{
     public void setMovimiento(String movimiento) {
         this.movimiento = movimiento;
     }
-
-    public static void imprimirPiezas(Pieza[] arreglo) {
-        int cont = 1;
-        for (Pieza p : arreglo) {
-            if (p != null) {
-                System.out.println(cont + ". " + p.toString());
-                cont++;
-            }
-        }
-        System.out.println("----------------------------------------------");
-    }
-
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + " " + getColor() + 
-            " (Velocidad: " + getVelocidad() + 
-            ", Comportamiento: " + getComportamiento() + 
-            ", Movimiento: " + getMovimiento() + ")";
-} 
-
-}
-
-}
     
     public static void mover(){
         
     }
 } 
->>>>>>> b68fd4dc10ad15712468975d13d4bf08807a9276
