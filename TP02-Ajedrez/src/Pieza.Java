@@ -1,4 +1,9 @@
 public abstract class Pieza {
+<<<<<<< HEAD
+=======
+
+public abstract class Pieza{
+>>>>>>> b68fd4dc10ad15712468975d13d4bf08807a9276
     private String color;
     private String velocidad;
     private String comportamiento;
@@ -7,6 +12,10 @@ public abstract class Pieza {
     public Pieza() {
     }
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> b68fd4dc10ad15712468975d13d4bf08807a9276
     public Pieza(String color, String velocidad, String comportamiento, String movimiento) {
         this.color = color;
         this.velocidad = velocidad;
@@ -64,4 +73,13 @@ public abstract class Pieza {
             ", Comportamiento: " + getComportamiento() + 
             ", Movimiento: " + getMovimiento() + ")";
 } 
+<<<<<<< HEAD
 }
+=======
+}
+    
+    public static void mover(){
+        
+    }
+} 
+>>>>>>> b68fd4dc10ad15712468975d13d4bf08807a9276
