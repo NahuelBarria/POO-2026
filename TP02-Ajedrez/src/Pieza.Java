@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-public abstract class Pieza {
-=======
-public abstract class Pieza{
->>>>>>> 21f9fb71ad9019c22b07366ae83be6e3f31e0c17
+public abstract class pieza {
     private String color;
     private String velocidad;
     private String comportamiento;
     private String movimiento;
 
-    public Pieza() {
+    public pieza() {
     }
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 21f9fb71ad9019c22b07366ae83be6e3f31e0c17
-    public Pieza(String color, String velocidad, String comportamiento, String movimiento) {
+    public pieza(String color, String velocidad, String comportamiento, String movimiento) {
         this.color = color;
         this.velocidad = velocidad;
         this.comportamiento = comportamiento;
@@ -53,11 +45,10 @@ public abstract class Pieza{
     public void setMovimiento(String movimiento) {
         this.movimiento = movimiento;
     }
-<<<<<<< HEAD
 
-    public static void imprimirPiezas(Pieza[] arreglo) {
+    public static void imprimirPiezas(pieza[] arreglo) {
         int cont = 1;
-        for (Pieza p : arreglo) {
+        for (pieza p : arreglo) {
             if (p != null) {
                 System.out.println(cont + ". " + p.toString());
                 cont++;
@@ -74,10 +65,3 @@ public abstract class Pieza{
             ", Movimiento: " + getMovimiento() + ")";
 } 
 }
-=======
-    
-    public static void mover(){
-        
-    }
-} 
->>>>>>> 21f9fb71ad9019c22b07366ae83be6e3f31e0c17
