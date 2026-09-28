@@ -1,13 +1,13 @@
-public abstract class pieza {
+public abstract class Pieza {
     private String color;
     private String velocidad;
     private String comportamiento;
     private String movimiento;
 
-    public pieza() {
+    public Pieza() {
     }
-    
-    public pieza(String color, String velocidad, String comportamiento, String movimiento) {
+
+    public Pieza(String color, String velocidad, String comportamiento, String movimiento) {
         this.color = color;
         this.velocidad = velocidad;
         this.comportamiento = comportamiento;
@@ -46,9 +46,9 @@ public abstract class pieza {
         this.movimiento = movimiento;
     }
 
-    public static void imprimirPiezas(pieza[] arreglo) {
+    public static void imprimirPiezas(Pieza[] arreglo) {
         int cont = 1;
-        for (pieza p : arreglo) {
+        for (Pieza p : arreglo) {
             if (p != null) {
                 System.out.println(cont + ". " + p.toString());
                 cont++;
